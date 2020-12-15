@@ -12,14 +12,12 @@ parcours_graham <- function(l){
     i=i+1
   }
   i=1
-  dessin_ordre(l)
+  plot(l[1,], l[2,],
+       xlab = "x", ylab = "y",main = "Enveloppe convexe des points affichés",
+       pch = 19, frame = FALSE)
   lines(p[1,],p[2,],'l')
   lines(c(p[1,length(p[1,])],p[1,1]),c(p[2,length(p[1,])],p[2,1]),'l')
   return(p)
 }
-
-M=matrix(c(0,2,-8,5,-8,0,-10,5,2,1,10,-1,2,4,1,8,0,-3,6,0,1,1) , nrow = 2)
-dessin_ordre(M)
-p=parcours_graham(M)
 
 

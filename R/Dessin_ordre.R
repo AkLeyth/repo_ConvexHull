@@ -30,8 +30,3 @@ dessin_ordre<-function(l){
        pch = 19, frame = FALSE)
   text(l[1,], l[2,], labels=v, cex= 1,pos=4)
 }
-
-dessin=dessin_ordre(matrix(c(0,2,-8,5,-8,0,-10,5,2,1,10,-1,2,4,1,8,0,-3,6,0),nrow = 2))
-label=labeltri(matrix(c(0,2,-8,5,-8,0,-10,5,2,1,10,-1,2,4,1,8,0,-3,6,0),nrow = 2))
-dessin
-label

@@ -57,12 +57,5 @@ angle_2dim = function(l){
   }
   return(list_angle)
 }
-# Ici l est une liste de vecteur dans R^2 représenté par une matrice de taille 2*(nombres de points).
-# On commence par trouver le point p de plus petite ordonnée ( p pour pivot ).
-# On calcule ensuite l'angle que fait chaque point avec le pivot et l'axe des absices.
-# On retourne une matrice ou la première ligne correspond à l'angle et la deuxieme la position dans la liste la position dans la matrice de départ 
-# NA sur la première ligne veux dire que le point considérer est le pivot et Inf veux dire que le point considérer est sur le même axe vertical que le pivot.
-l=matrix(c(5,-8,5,-8,0,-10,5,2,1,-8),nrow = 2)
-u=angle_2dim(l)
-u
+
 
